@@ -10,7 +10,15 @@ exports = module.exports = function(i18nc)
 		debug('register keytrim for i18nc');
 		i18nc.addListener('cutword', function(emitData)
 		{
-			emitData.result = keyTrim(emitData.result);
+			if (emitData.options.pluginEnabled.keyTrim)
+			{
+				debug('run by keytrim');
+				emitData.result = keyTrim(emitData.result);
+			}
+			else
+			{
+				debug('keytime is not enabled');
+			}
 		});
 
 		enabled.keyTrim = false;

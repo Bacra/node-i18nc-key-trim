@@ -9,7 +9,14 @@ describe('#keytrim', function()
 {
 	function txt2code(val)
 	{
-		var info = i18nc('var str="'+val+'";', {codeModifiedArea: ['TranslateWord']});
+		var info = i18nc('var str="'+val+'";',
+			{
+				codeModifiedArea: ['TranslateWord'],
+				pluginEnabled:
+				{
+					keyTrim: true
+				}
+			});
 		return info.code.substr(8, info.code.length-9);
 	}
 
