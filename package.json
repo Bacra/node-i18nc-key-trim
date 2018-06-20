@@ -1,7 +1,7 @@
 {
   "name": "i18nc-plugin-keytrim",
   "version": "0.1.0",
-  "description": "I18N Tool for JS files",
+  "description": "TranslateWord Trim for I18N",
   "main": "keytrim.js",
   "scripts": {
     "prepublish": "npm ls",
