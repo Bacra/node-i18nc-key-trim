@@ -1,11 +1,11 @@
 {
-  "name": "i18nc-plugin-keytrim",
+  "name": "i18nc-key-trim",
   "version": "0.1.0",
   "description": "TranslateWord Trim for I18N",
   "main": "keytrim.js",
   "scripts": {
     "prepublish": "npm ls",
-    "test": "cross-env DEBUG=i18nc-plugin-keytrim* mocha test/test_*",
+    "test": "cross-env DEBUG=i18nc-key-trim* mocha test/test_*",
     "test-cov": "istanbul cover _mocha -- test/test_* --reporter dot",
     "test-eslint": "eslint .",
     "test-travis": "istanbul cover _mocha --report lcovonly -- test/test_* --reporter dot"
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Bacra/node-i18nc-plugin-keytrim.git"
+    "url": "git@github.com:Bacra/node-i18nc-key-trim.git"
   },
   "keywords": [
     "i18n",
@@ -33,7 +33,7 @@
   "author": "Bacra Woo<bacra.woo@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Bacra/node-i18nc-plugin-keytrim/issues"
+    "url": "https://github.com/Bacra/node-i18nc-key-trim/issues"
   },
-  "homepage": "https://github.com/Bacra/node-i18nc-plugin-keytrim"
+  "homepage": "https://github.com/Bacra/node-i18nc-key-trim"
 }
