@@ -17,7 +17,7 @@ exports = module.exports = function(i18nc)
 			}
 			else
 			{
-				debug('keytime is not enabled');
+				debug('keytrim is not enabled');
 			}
 		});
 

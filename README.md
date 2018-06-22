@@ -9,8 +9,9 @@ I18NC-KEY-TRIM
 [![NPM License][license-image]][npm-url]
 
 # Install
+
 ```
-npm install i18nc-key-trim
+npm install i18nc i18nc-key-trim --save
 ```
 
 # Useage
@@ -19,8 +20,8 @@ npm install i18nc-key-trim
 var i18nc = require('i18nc');
 require('i18nc-key-trim')(i18nc);
 
-i18nc('var str="<span> 中文 词典 </span>"', {pluginEnabled: {keyTrim: true}});
-console.log(i18nc.code);	// var str='<span> '+I18N('中文 词典')+' </span>';
+var info = i18nc('var str="<span> 中文 词典 </span>"', {pluginEnabled: {keyTrim: true}});
+console.log(info.code);	// var str='<span> '+I18N('中文 词典')+' </span>';
 ```
 
 
