@@ -1,7 +1,7 @@
 'use strict';
 
 var expect	= require('expect.js');
-var i18nc	= require('i18nc');
+var i18nc	= require('i18nc-core');
 
 require('../')(i18nc);
 

@@ -1,25 +1,26 @@
 {
   "name": "i18nc-key-trim",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TranslateWord Trim for I18N",
   "main": "keytrim.js",
   "scripts": {
     "prepublish": "npm ls",
+    "lint": "eslint .",
     "test": "cross-env DEBUG=i18nc-key-trim* mocha test/test_*",
     "test-cov": "istanbul cover _mocha -- test/test_* --reporter dot",
-    "test-eslint": "eslint .",
     "test-travis": "istanbul cover _mocha --report lcovonly -- test/test_* --reporter dot"
   },
   "dependencies": {
-    "debug": "^2.6.9"
+    "debug": "^4.0.1"
   },
   "devDependencies": {
-    "cross-env": "^2.0.0",
-    "eslint": "^4.19.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.1",
+    "eslint-config-brcjs": "^0.2.0",
     "expect.js": "^0.3.1",
-    "i18nc": "^4.5.0",
+    "i18nc-core": "^10.9.2",
     "istanbul": "^0.4.5",
-    "mocha": "^3.5.3"
+    "mocha": "^5.2.0"
   },
   "repository": {
     "type": "git",
