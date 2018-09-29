@@ -1,5 +1,5 @@
 I18NC-KEY-TRIM
-==================
+===============
 
 
 [![NPM Version][npm-image]][npm-url]
@@ -21,7 +21,7 @@ var i18nc = require('i18nc');
 require('i18nc-key-trim')(i18nc);
 
 var info = i18nc('var str="<span> 中文 词典 </span>"', {pluginEnabled: {keyTrim: true}});
-console.log(info.code);	// var str='<span> '+I18N('中文 词典')+' </span>';
+console.log(info.code);  // var str='<span> '+I18N('中文 词典')+' </span>';
 ```
 
 
